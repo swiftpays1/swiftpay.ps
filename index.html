@@ -1,427 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swift Pay - سويفت باي</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="container">
-                <div class="nav-content">
-                    <div class="logo">
-                        <span class="logo-icon">💳</span>
-                        <span class="logo-text" data-i18n="logo">Swift Pay</span>
-                    </div>
-                    
-                    <ul class="nav-menu">
-                        <li><a href="#home" class="nav-link active" data-i18n="nav.home">الرئيسية</a></li>
-                        <li><a href="#countries" class="nav-link" data-i18n="nav.countries">الدول</a></li>
-                        <li><a href="#global-methods" class="nav-link" data-i18n="nav.global">الطرق العالمية</a></li>
-                        <li><a href="#faq" class="nav-link" data-i18n="nav.faq">الأسئلة الشائعة</a></li>
-                        <li><a href="#contact" class="nav-link" data-i18n="nav.contact">تواصل معنا</a></li>
-                    </ul>
-                    
-                    <div class="nav-controls">
-                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                            <span class="theme-icon">🌙</span>
-                        </button>
-                        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
-                            <span class="lang-text">EN</span>
-                        </button>
-                        <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="hero-shape shape-1"></div>
-            <div class="hero-shape shape-2"></div>
-            <div class="hero-shape shape-3"></div>
-        </div>
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title" data-i18n="hero.title">
-                    أرسل واستقبل أموالك<br>
-                    <span class="gradient-text">بكل سهولة وأمان</span>
-                </h1>
-                <p class="hero-subtitle" data-i18n="hero.subtitle">
-                    نوفر لك خدمات تحويل الأموال من وإلى أكثر من 20 دولة حول العالم
-                    <br>بأسرع وقت وأعلى مستويات الأمان
-                </p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary btn-large">
-                        <span data-i18n="hero.cta">ابدأ التحويل الآن</span>
-                        <span class="btn-icon">🚀</span>
-                    </a>
-                    <a href="#countries" class="btn btn-secondary btn-large">
-                        <span data-i18n="hero.explore">استكشف الدول</span>
-                        <span class="btn-icon">🌍</span>
-                    </a>
-                </div>
-                
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <div class="stat-icon">🌍</div>
-                        <div class="stat-number">20+</div>
-                        <div class="stat-label" data-i18n="stats.countries">دولة</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-icon">🏦</div>
-                        <div class="stat-number">100+</div>
-                        <div class="stat-label" data-i18n="stats.banks">بنك ومحفظة</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-icon">⚡</div>
-                        <div class="stat-number">24/7</div>
-                        <div class="stat-label" data-i18n="stats.support">دعم فوري</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-icon">🔒</div>
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label" data-i18n="stats.secure">آمن</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-i18n="features.title">لماذا Swift Pay؟</h2>
-                <p class="section-subtitle" data-i18n="features.subtitle">نقدم لك أفضل تجربة في تحويل الأموال</p>
-            </div>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3 class="feature-title" data-i18n="features.fast.title">سرعة فائقة</h3>
-                    <p class="feature-description" data-i18n="features.fast.desc">تحويلات فورية خلال دقائق</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3 class="feature-title" data-i18n="features.secure.title">أمان تام</h3>
-                    <p class="feature-description" data-i18n="features.secure.desc">تشفير متقدم لحماية معاملاتك</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">💰</div>
-                    <h3 class="feature-title" data-i18n="features.competitive.title">أسعار تنافسية</h3>
-                    <p class="feature-description" data-i18n="features.competitive.desc">رسوم منخفضة وأسعار صرف ممتازة</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🌍</div>
-                    <h3 class="feature-title" data-i18n="features.global.title">تغطية عالمية</h3>
-                    <p class="feature-description" data-i18n="features.global.desc">أكثر من 20 دولة حول العالم</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3 class="feature-title" data-i18n="features.easy.title">سهولة الاستخدام</h3>
-                    <p class="feature-description" data-i18n="features.easy.desc">واجهة بسيطة وسهلة للجميع</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3 class="feature-title" data-i18n="features.support.title">دعم مستمر</h3>
-                    <p class="feature-description" data-i18n="features.support.desc">فريق دعم متاح على مدار الساعة</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Countries Section -->
-    <section id="countries" class="countries">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-i18n="countries.title">الدول المدعومة</h2>
-                <p class="section-subtitle" data-i18n="countries.subtitle">اختر الدولة التي تريد التحويل منها أو إليها</p>
-            </div>
-            
-            <!-- Gulf Countries -->
-            <div class="country-category">
-                <h3 class="category-title" data-i18n="countries.categories.gulf">دول الخليج العربي</h3>
-                <div class="countries-grid" id="gulfCountries">
-                    <!-- Gulf countries will be dynamically inserted here -->
-                </div>
-            </div>
-            
-            <!-- Middle East Countries -->
-            <div class="country-category">
-                <h3 class="category-title" data-i18n="countries.categories.middleeast">الشرق الأوسط</h3>
-                <div class="countries-grid" id="middleeastCountries">
-                    <!-- Middle East countries will be dynamically inserted here -->
-                </div>
-            </div>
-            
-            <!-- African Countries -->
-            <div class="country-category">
-                <h3 class="category-title" data-i18n="countries.categories.africa">أفريقيا</h3>
-                <div class="countries-grid" id="africaCountries">
-                    <!-- African countries will be dynamically inserted here -->
-                </div>
-            </div>
-            
-            <!-- Europe & Americas -->
-            <div class="country-category">
-                <h3 class="category-title" data-i18n="countries.categories.international">أوروبا وأمريكا</h3>
-                <div class="countries-grid" id="internationalCountries">
-                    <!-- International countries will be dynamically inserted here -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Global Methods Section -->
-    <section id="global-methods" class="global-methods">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-i18n="global.title">الطرق العالمية</h2>
-                <p class="section-subtitle" data-i18n="global.subtitle">نقبل ونرسل عبر أشهر الطرق العالمية</p>
-            </div>
-            
-            <div class="global-methods-grid">
-                <div class="method-card">
-                    <div class="method-logo">
-                        <img src="images/paypal.png" alt="PayPal">
-                    </div>
-                    <h3 class="method-title">PayPal</h3>
-                    <p class="method-description" data-i18n="global.paypal">الطريقة الأكثر شيوعاً عالمياً</p>
-                    <a href="#contact" class="btn btn-outline">
-                        <span data-i18n="global.transfer">انقر للتحويل</span>
-                    </a>
-                </div>
-                
-                <div class="method-card">
-                    <div class="method-logo">
-                        <img src="images/western-union.png" alt="Western Union">
-                    </div>
-                    <h3 class="method-title">Western Union</h3>
-                    <p class="method-description" data-i18n="global.western">تحويلات سريعة وموثوقة</p>
-                    <a href="#contact" class="btn btn-outline">
-                        <span data-i18n="global.transfer">انقر للتحويل</span>
-                    </a>
-                </div>
-                
-                <div class="method-card">
-                    <div class="method-logo">
-                        <img src="images/moneygram.png" alt="MoneyGram">
-                    </div>
-                    <h3 class="method-title">MoneyGram</h3>
-                    <p class="method-description" data-i18n="global.moneygram">خدمة عالمية معتمدة</p>
-                    <a href="#contact" class="btn btn-outline">
-                        <span data-i18n="global.transfer">انقر للتحويل</span>
-                    </a>
-                </div>
-                
-                <div class="method-card">
-                    <div class="method-logo">
-                        <img src="images/upt.png" alt="UPT">
-                    </div>
-                    <h3 class="method-title">UPT</h3>
-                    <p class="method-description" data-i18n="global.upt">Union Pay Transfer</p>
-                    <a href="#contact" class="btn btn-outline">
-                        <span data-i18n="global.transfer">انقر للتحويل</span>
-                    </a>
-                </div>
-                <div class="method-card">
-                    <div class="method-logo">
-                        <img src="images/usdt.svg" alt="USDT">
-                    </div>
-                    <h3 class="method-title">USDT</h3>
-                    <p class="method-description" data-i18n="global.usdt">Multiple cryptocurrencies</p>
-                    <a href="#contact" class="btn btn-outline">
-                        <span data-i18n="global.transfer">انقر للتحويل</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq" class="faq">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-i18n="faq.title">الأسئلة الشائعة</h2>
-                <p class="section-subtitle" data-i18n="faq.subtitle">إجابات على أكثر الأسئلة شيوعاً</p>
-            </div>
-            
-            <div class="faq-list">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span data-i18n="faq.q1.question">كيف يعمل سويفت باي ؟</span>
-                        <span class="faq-icon">➕</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p data-i18n="faq.q1.answer">سويفت باي هي منصة تحويل أموال عالمية تتيح لك إرسال واستقبال الأموال من وإلى أكثر من 20 دولة. ببساطة، اختر الدولة، حدد طريقة الدفع، وتواصل معنا لإتمام العملية بسرعة وأمان.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span data-i18n="faq.q2.question">ما هي الدول المدعومة؟</span>
-                        <span class="faq-icon">➕</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p data-i18n="faq.q2.answer">ندعم أكثر من 20 دولة بما في ذلك: السعودية، الإمارات، مصر، الأردن، الكويت، البحرين، عمان، قطر، العراق، اليمن، تركيا، لبنان، الجزائر، تونس، المغرب، فلسطين، السودان، دول الاتحاد الأوروبي، أمريكا، وكندا.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span data-i18n="faq.q3.question">كيف أبدأ عملية التحويل؟</span>
-                        <span class="faq-icon">➕</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p data-i18n="faq.q3.answer">ببساطة، اختر الدولة التي تريد التحويل منها أو إليها، ثم اضغط على "انقر للتحويل" وسيتم توجيهك لصفحة التواصل معنا حيث يمكنك تقديم تفاصيل التحويل المطلوبة.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span data-i18n="faq.q4.question">هل سويفت باي آمن؟</span>
-                        <span class="faq-icon">➕</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p data-i18n="faq.q4.answer">نعم، نستخدم أحدث تقنيات التشفير والأمان لحماية معلوماتك المالية. جميع المعاملات مشفرة ومحمية بأعلى معايير الأمان العالمية.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span data-i18n="faq.q5.question">كم تستغرق عملية التحويل؟</span>
-                        <span class="faq-icon">➕</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p data-i18n="faq.q5.answer">معظم التحويلات تتم خلال دقائق معدودة. قد تستغرق بعض التحويلات الدولية من 1-3 أيام عمل حسب الدولة وطريقة الدفع المختارة.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span data-i18n="faq.q6.question">ما هي الرسوم المطبقة؟</span>
-                        <span class="faq-icon">➕</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p data-i18n="faq.q6.answer">الرسوم تختلف حسب الدولة وطريقة الدفع المختارة. للحصول على تفاصيل دقيقة عن الرسوم، يرجى التواصل معنا مباشرة.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-i18n="contact.title">تواصل معنا</h2>
-                <p class="section-subtitle" data-i18n="contact.subtitle">نحن هنا لمساعدتك في أي وقت</p>
-            </div>
-            
-            <div class="contact-content-centered">
-                <div class="contact-cards-wrapper">
-                    <div class="contact-card-modern">
-                        <div class="contact-card-icon">
-                            <span class="icon-circle">📧</span>
-                        </div>
-                        <h3 data-i18n="contact.email.title">البريد الإلكتروني</h3>
-                        <p class="contact-email">swiftpays1@gmail.com</p>
-                        <a href="mailto:swiftpays1@gmail.com" class="btn btn-primary">
-                            <span data-i18n="contact.email.cta">أرسل رسالة</span>
-                            <span class="btn-arrow">→</span>
-                        </a>
-                    </div>
-                    
-                    <div class="contact-card-modern">
-                        <div class="contact-card-icon">
-                            <span class="icon-circle whatsapp">💬</span>
-                        </div>
-                        <h3 data-i18n="contact.whatsapp.title">واتساب</h3>
-                        <p class="contact-phone">+970594366045</p>
-                        <a href="https://wa.me/970594366045" target="_blank" class="btn btn-whatsapp">
-                            <span data-i18n="contact.whatsapp.cta">تواصل عبر واتساب</span>
-                            <span class="btn-arrow">→</span>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="contact-info-text">
-                    <p data-i18n="contact.availability">نحن متاحون على مدار الساعة لمساعدتك في جميع احتياجات التحويل المالي</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="logo">
-                        <span class="logo-icon">💳</span>
-                        <span class="logo-text">Swift Pay</span>
-                    </div>
-                    <p class="footer-description" data-i18n="footer.description">
-                        منصة تحويل الأموال الأكثر أماناً وسرعة في العالم العربي
-                    </p>
-                </div>
-                
-                <div class="footer-section">
-                    <h4 data-i18n="footer.links">روابط سريعة</h4>
-                    <ul class="footer-links">
-                        <li><a href="#home" data-i18n="nav.home">الرئيسية</a></li>
-                        <li><a href="#countries" data-i18n="nav.countries">الدول</a></li>
-                        <li><a href="#global-methods" data-i18n="nav.global">الطرق العالمية</a></li>
-                        <li><a href="#faq" data-i18n="nav.faq">الأسئلة الشائعة</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4 data-i18n="footer.contact">تواصل معنا</h4>
-                    <ul class="footer-links">
-                        <li>📧 swiftpays1@gmail.com</li>
-                        <li>💬 واتساب: +970 594366045</li>
-                        <li>🌍 متاح 24/7</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Swift Pay - سويفت باي. <span data-i18n="footer.rights">جميع الحقوق محفوظة</span></p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Country Details Modal -->
-    <div class="modal" id="countryModal">
-        <div class="modal-overlay"></div>
-        <div class="modal-content">
-            <button class="modal-close" id="modalClose">✕</button>
-            <div class="modal-body" id="modalBody">
-                <!-- Content will be dynamically inserted -->
-            </div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
-
